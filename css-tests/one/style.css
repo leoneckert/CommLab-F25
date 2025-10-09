@@ -1,0 +1,60 @@
+body{
+    background-color: cornflowerblue;
+}
+
+p{
+    background-color: blueviolet;
+}
+
+.box{
+    background-color: coral;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+
+#two{
+    border: 2px black dashed;
+}
+
+#three{
+    padding: 30px;
+    margin-top: 40px;
+}
+
+#three p{
+    background-color: chartreuse;
+}
+
+#two p{
+    display: inline;
+}
+
+#four{
+    display: inline;
+}
+
+#four p{
+    display: inline;
+}
+
+#five{
+    width:100px;
+    height:100px;
+    margin-left: 100px;
+    margin-bottom: 20px;
+}
+
+.column{
+    width: 28%;
+    height: 50px;
+    display: inline-block;
+    background-color: blue;
+}
+
+.column:hover{
+    background-color: pink;
+}
+
+p:hover{
+    font-style: italic;
+}

@@ -1,0 +1,22 @@
+p{
+    color: blue;
+}
+
+a{
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+
+#specialDiv{
+    background-color: blueviolet;
+    padding: 10px;
+    border: yellowgreen 10px dotted;
+    margin-bottom: 200px;
+    margin-top:50px;
+}
+
+.highlight{
+    background-color: lightyellow;
+}
