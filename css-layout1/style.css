@@ -1,0 +1,57 @@
+body{
+    background-color: cadetblue;
+}
+
+.box{
+    width: 300px;
+    /* height: 100px; */
+    outline: 2px solid white;
+    padding: 10px;
+    margin: 20px;
+    background-color: lightcyan;
+}
+
+#one{
+    /* display:none; */
+    /* visibility: hidden; */
+    position: relative;
+    top: 0px;
+    left: 20px;
+}
+
+#one span{
+    position: relative;
+    top: -6px;
+    left: 2px;
+}
+
+/* #two:active div{
+    background-color: red;
+} */
+
+#two{
+    position: absolute;
+    top: 300px;
+    left: 800px;
+    background-color: hotpink;
+}
+
+#three{
+    position: fixed;
+    bottom: 0px;
+    right:0px;
+    background-color: indianred;
+}
+
+#four{
+    position: sticky;
+    top:0px;
+    left:0px;
+    background-color: chartreuse;
+}
+
+#five{
+    background-color: blanchedalmond;
+    height:2000px;
+    width: 350px;
+}
