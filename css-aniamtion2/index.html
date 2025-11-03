@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes down{
+            from{
+                transform: translateY(0px);
+            }
+            to{
+                transform: translateY(100px);
+            }
+        }
+        span{
+            display: inline-block;
+        }
+        span:nth-child(1){
+            animation: down 2s infinite forwards, down 2s 2s reverse infinite forwards;
+        }
+    </style>
+</head>
+<body>
+    <p><span>one</span> <span>two</span> <span>three</span></p>
+</body>
+</html>
