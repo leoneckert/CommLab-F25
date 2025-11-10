@@ -1,0 +1,49 @@
+body{
+   transition: background-color 3s ease-out;
+}
+.darkbackground{
+    background-color: rgb(0, 40, 114);
+}
+
+.tryme{
+    position: absolute;
+    color: palevioletred;
+
+}
+#start{
+    font-size: 30px;
+    width: 70px;
+}
+
+
+.spin{
+    animation: spin 1s infinite linear;
+}
+
+@keyframes spin{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+.pinkDiv{
+    width: 500px;
+    height: 400px;
+    background-color: palevioletred;
+}
+
+.moveLeftRight{
+    animation: leftRight 2s ease-in-out infinite alternate;
+}
+
+@keyframes leftRight {
+    from{
+        transform: translate(0px, 0px);
+    }
+    to{
+        transform: translate(500px, 0px);
+    }
+}
