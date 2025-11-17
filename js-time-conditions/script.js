@@ -13,7 +13,9 @@ function typedSomething(eventInfo){
     // put text into output element
     output.innerText = text;
 
-    if(text == "spin"){
+    // if(text == "spin"){
+    if(text.includes("spin")){
+
         spin(elementInteractedWith);
         eventInfo.target.value = "";
         output.innerText = "";
@@ -31,11 +33,12 @@ myText.addEventListener("input", typedSomething)
 
 
 
-
+let angle = 0;
 // function to spin an element 
 function spin(element){
+    angle = angle + Math.random()*1080;
     element.style.transition = "all 1s linear"
-    element.style.transform = "rotate(360deg)"
+    element.style.transform = "rotate("+angle+"deg)"
 }
 
 
