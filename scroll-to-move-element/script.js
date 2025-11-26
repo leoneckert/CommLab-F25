@@ -48,6 +48,38 @@ window.addEventListener("scroll", function(){
    
 
 
+    // element 5:
+    let elm5 = document.querySelector("#five"); // select element
+    let elm5TotalAngle = 2*Math.PI;
+    let elm5CurrentAngle = (percentage/100)*elm5TotalAngle + Math.PI
+    let elm5Radius = 90
+    let elm5XOffset = elm5Radius+ Math.cos(elm5CurrentAngle) * elm5Radius;
+    let elm5YOffset = Math.sin(elm5CurrentAngle) * elm5Radius;
+    elm5.style.transform = "translate("+elm5XOffset+"px, "+elm5YOffset+"px)";
+   
+
+    // element 6 and 7 are the two question marks changing position
+    // element 6:
+    let elm6 = document.querySelector("#six"); // select element
+    let elm6TotalDistanceX = 70; 
+    let elm6XOffset = elm6TotalDistanceX * (percentage/50);
+    if(elm6XOffset > elm6TotalDistanceX){
+        elm6XOffset = elm6TotalDistanceX;
+    }
+    let elm6TotalDistanceY = 73; 
+    let elm6YOffset = elm6TotalDistanceY * ((percentage-50)/50);
+    if(elm6YOffset < 0){
+        elm6YOffset = 0;
+    }
+    elm6.style.transform = "translate("+elm6XOffset+"px, "+elm6YOffset+"px)";
+   
+    // element 7:
+    let elm7 = document.querySelector("#seven"); // select element
+    // below i just use the negative of the above calculated value
+    elm7.style.transform = "translate("+(-elm6XOffset)+"px, "+(-elm6YOffset)+"px)";
+   
+
+
 })
 
 

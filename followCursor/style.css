@@ -1,0 +1,10 @@
+#cursorImgWrapper{
+    position: absolute;
+    outline: 2px red solid;
+    pointer-events: none;
+}
+
+#cursorImgWrapper img{
+    margin-top: -50%;
+    margin-left: -50%;
+}
